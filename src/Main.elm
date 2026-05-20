@@ -2,14 +2,14 @@ module Main exposing (main)
 
 import Browser
 import Html exposing (..)
-import UserProfile
+import UserProfileApp
 
 
-main : Program () UserProfile.Model UserProfile.Msg
+main : Program () UserProfileApp.Model UserProfileApp.Msg
 main =
     Browser.element
-        { init = UserProfile.init
-        , update = UserProfile.update
+        { init = UserProfileApp.init
+        , update = UserProfileApp.update
         , subscriptions = \_ -> Sub.none
-        , view = UserProfile.view
+        , view = UserProfileApp.view
         }
